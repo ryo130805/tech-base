@@ -1,11 +1,11 @@
 <?php
     //以下データベースの接続情報ですが、不正防止のため書き換えてあります。
     //データソースネーム　識別子である。
-    $dsn = 'mysql:dbname="データベース名";host=localhost';
+    $dsn = 'mysql:dbname="*********";host=localhost';
     //ユーザー名。
-    $user = 'ユーザー名';
+    $user = '********';
     //パスワード。
-    $password = 'パスワード';
+    $password = '*********';
     //$pdoはPHPデータベースオブジェクト。これでphpを介してデータベースにアクセスすることが出来る。array以下は
     //エラー分を出してくれるようにする命令。
     $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
